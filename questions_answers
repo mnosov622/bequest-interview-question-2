@@ -1,0 +1,17 @@
+Answers to questions:
+
+1. How does the client ensure that their data has not been tampered with?
+
+Digital Signatures:
+To ensure data hasn’t been tampered with, we use digital signatures. Whenever important user data is created or updated, we sign it with a private key. Later, we can verify this data using the corresponding public key. This process ensures that any unauthorized changes will be detected, maintaining the integrity and authenticity of the data.
+
+Blockchain Technology:
+Another method we use is blockchain technology. We store hashes of critical data on a blockchain. Since the blockchain is decentralized and immutable, any attempt to tamper with the data will be immediately obvious. This helps us keep the data secure and tamper-proof.
+
+2. If the data has been tampered with, how can the client recover the lost data?
+
+Backups and Snapshots:
+In case data is tampered with, we rely on regularly scheduled backups and database snapshots. These backups allow us to restore the data to a known good state quickly. Something I used in previous job: we had automated backup systems in place to ensure that data recovery is efficient and reliable.
+
+Audit Logs:
+Another way: detailed audit logs of all changes to the data. These logs help us track when and how the data was altered, allowing us to identify and reverse any unauthorized modifications. This way, we can recover lost data and ensure the integrity of our system.
